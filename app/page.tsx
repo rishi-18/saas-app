@@ -1,8 +1,7 @@
-import React from 'react'
-import { Button } from '@/components/ui/button'
 import CompanionCard from '@/components/CompanionCard'
 import CompanionsList from '@/components/CompanionsList'
 import CTA from '@/components/CTA'
+import { recentSessions } from '@/constants'
 
 const Page = () => {
   return (
@@ -37,7 +36,11 @@ const Page = () => {
       </section>
 
       <section className='home-section'>
-        <CompanionsList/>
+        <CompanionsList
+          title="Recently Completed Lessons"
+          companions={recentSessions}
+          classNames="w-2/3 max-lg:width-full"
+        />
         <CTA/>
       </section>
     </main>
