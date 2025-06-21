@@ -3,7 +3,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   typescript: {
-    // Set to true to enable type checking during build time
     ignoreBuildErrors: true,
   },
   images: {
